@@ -1,0 +1,39 @@
+.lecture-info {
+    text-align: center;
+    margin: 20px;
+}
+
+.lecture-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.lecture-card img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.lecture-details {
+    flex: 1;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .lecture-card {
+        flex-direction: column;
+    }
+
+    .lecture-card img {
+        margin: 0 0 10px 0;
+    }
+
+    .lecture-details {
+        text-align: center;
+    }
+}

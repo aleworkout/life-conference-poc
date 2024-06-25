@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+}
+
+.real-time-info {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
