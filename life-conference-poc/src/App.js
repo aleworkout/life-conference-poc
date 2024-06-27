@@ -34,13 +34,16 @@ const handleBuyClick = () => {
   window.location.href = '/comprar-ingresso';
 };
 
+/**
+ * Renders the main application component.
+ * @returns {JSX.Element} The rendered App component.
+ */
 function App() {
   return (
     <div className="App">
       <HeaderInteractive />
       <SpeakersSection speakers={speakersData} />
-      <BuyButton onClick={handleBuyClick} discount="20% OFF" />
-    </div>
+{/* <BuyButton onClick={handleBuyClick} discount="20% OFF" /> */}    </div>
   );
 }
 
