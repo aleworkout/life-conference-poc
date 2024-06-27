@@ -1,20 +1,19 @@
+// src/App.js
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import RealTimeInfo from './components/RealTimeInfo';
-import LectureInfo from './components/LectureInfo';
-import './styles/App.css';
+import BuyButton from './components/BuyButton/BuyButton';
 
-const App = () => (
+const handleBuyClick = () => {
+  // Lógica para redirecionar para a página de compra de ingressos
+  window.location.href = '/comprar-ingresso';
+};
+
+function App() {
+  return (
     <div className="App">
-        <Header />
-        <main>
-            <RealTimeInfo />
-            <LectureInfo />
-            {/* Adicione outros componentes aqui */}
-        </main>
-        <Footer />
+      <h1>Bem-vindo ao Evento</h1>
+      <BuyButton onClick={handleBuyClick} discount="20% OFF" />
     </div>
-);
+  );
+}
 
 export default App;

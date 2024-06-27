@@ -8,6 +8,11 @@ header {
   color: white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   background-color: #282c34;
   padding: 10px;
