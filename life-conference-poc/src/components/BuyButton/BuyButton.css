@@ -1,0 +1,53 @@
+/* Tipografia e Espaçamento */
+.typography-spacing {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+  
+  /* Cores e Contraste */
+  .colors-contrast {
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  /* Bordas e Sombra */
+  .borders-shadow {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estado de Hover e Ativo */
+  .hover-active {
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .hover-active:hover {
+    background-color: #ff8a80;
+    transform: translateY(-2px);
+  }
+  
+  .hover-active:active {
+    background-color: #e55b54;
+    transform: translateY(0);
+  }
+  
+  /* Feedback de Foco */
+  .focus-outline {
+    outline: none;
+  }
+  
+  .focus-outline:focus {
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.5);
+  }
+  
+  /* Tag de Desconto */
+  .discount-tag {
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  
