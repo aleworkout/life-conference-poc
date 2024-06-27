@@ -82,7 +82,7 @@ const ActionButton = styled.button`
 const HeaderInteractive = () => {
   return (
     <HeaderContainer>
-      <Logo>Life Conference Amazon 2024</Logo>
+      <Logo translate='no'>Life Conference Amazon 2024</Logo>
       <Nav>
         <NavLink href="#about">Sobre</NavLink>
         <NavLink href="#speakers">Palestrantes</NavLink>

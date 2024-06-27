@@ -1,6 +1,5 @@
 // src/App.js
 import React from 'react';
-import BuyButton from './components/BuyButton/BuyButton';
 import SpeakersSection from './components/SpeakersSection/SpeakersSection';
 import HeaderInteractive from './components/HeaderInteractive/HeaderInteractive';
 
@@ -43,7 +42,7 @@ function App() {
     <div className="App">
       <HeaderInteractive />
       <SpeakersSection speakers={speakersData} />
-{/* <BuyButton onClick={handleBuyClick} discount="20% OFF" /> */}    </div>
+    </div>
   );
 }
 
