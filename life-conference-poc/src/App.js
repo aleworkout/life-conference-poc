@@ -28,11 +28,6 @@ const speakersData = [
   // Mais palestrantes...
 ];
 
-const handleBuyClick = () => {
-  // Lógica para redirecionar para a página de compra de ingressos
-  window.location.href = '/comprar-ingresso';
-};
-
 /**
  * Renders the main application component.
  * @returns {JSX.Element} The rendered App component.
