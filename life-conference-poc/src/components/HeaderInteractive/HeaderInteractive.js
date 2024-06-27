@@ -9,17 +9,34 @@ const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.div`
   font-size: 2rem;
   font-weight: bold;
-  color: #A7FF0B; /* Verde Neon */
+  color: #32ff7e; /* Verde Neon */
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 `;
 
 const Nav = styled.nav`
   display: flex;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 const NavLink = styled.a`
@@ -31,10 +48,17 @@ const NavLink = styled.a`
   &:hover {
     color: #32ff7e;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
 `;
 
 const ActionButton = styled.button`
-  background-color: #A7FF0B;
+  background-color: #32ff7e;
   color: #2b2b2b;
   border: none;
   padding: 10px 20px;
@@ -45,6 +69,13 @@ const ActionButton = styled.button`
 
   &:hover {
     background-color: #28d76e;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
 `;
 
