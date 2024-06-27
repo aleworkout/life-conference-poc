@@ -6,8 +6,8 @@
   
   /* Cores e Contraste */
   .colors-contrast {
-    background-color: #ff6f61;
-    color: white;
+    background-color: #A7FF0B;
+    color: #2b2b2b;
   }
   
   /* Bordas e Sombra */
@@ -23,12 +23,12 @@
   }
   
   .hover-active:hover {
-    background-color: #ff8a80;
+    background-color: #32ff7e;
     transform: translateY(-2px);
   }
   
   .hover-active:active {
-    background-color: #e55b54;
+    background-color: #32ff7e;
     transform: translateY(0);
   }
   

@@ -14,25 +14,25 @@ export const Default = Template.bind({});
 Default.args = {
   speakers: [
     {
-        id: 1,
-        name: 'Paulo Muzi',
-        bio: 'Especialista em Nutrição e Treinamento.',
-        image: '/images/paulo-muzi.png',
-        links: [
-          { url: 'https://instagram.com/paulo', icon: '📸' },
-          { url: 'https://linkedin.com/in/paulo', icon: '🔗' },
-        ],
-    },
-    {
-        id: 2,
-        name: 'Daniel Guedes',
-        bio: 'Especialista em Nutrição e Treinamento.',
-        image: '/images/daniel-guedes.png',
-        links: [
-          { url: 'https://instagram.com/daniel', icon: '📸' },
-          { url: 'https://linkedin.com/in/daniel', icon: '🔗' },
-        ],
-    },
+      id: 1,
+      name: 'Paulo Muzi',
+      bio: 'Médico, Empreśario, Especialista em Alta Performance.',
+      image: '/images/paulo-muzi.png',
+      links: [
+        { url: 'https://instagram.com/paulo', icon: '📸' },
+        { url: 'https://linkedin.com/in/paulo', icon: '🔗' },
+      ],
+  },
+  {
+    id: 2,
+    name: 'Daniel Guedes',
+    bio: 'Empresário, Nutricionista, Coach e Atleta de Alta Proffisional.',
+    image: '/images/daniel-guedes.png',
+    links: [
+      { url: 'https://instagram.com/daniel', icon: '📸' },
+      { url: 'https://linkedin.com/in/daniel', icon: '🔗' },
+    ],
+},
     // Mais palestrantes...
   ],
 };

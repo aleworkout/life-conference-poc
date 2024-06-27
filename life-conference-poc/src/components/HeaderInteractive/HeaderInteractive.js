@@ -14,7 +14,7 @@ const HeaderContainer = styled.header`
 const Logo = styled.div`
   font-size: 2rem;
   font-weight: bold;
-  color: #32ff7e; /* Verde Neon */
+  color: #A7FF0B; /* Verde Neon */
 `;
 
 const Nav = styled.nav`
@@ -34,7 +34,7 @@ const NavLink = styled.a`
 `;
 
 const ActionButton = styled.button`
-  background-color: #32ff7e;
+  background-color: #A7FF0B;
   color: #2b2b2b;
   border: none;
   padding: 10px 20px;

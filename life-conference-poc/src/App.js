@@ -5,10 +5,10 @@ import SpeakersSection from './components/SpeakersSection/SpeakersSection';
 import HeaderInteractive from './components/HeaderInteractive/HeaderInteractive';
 
 const speakersData = [
-  {
+{
     id: 1,
     name: 'Paulo Muzi',
-    bio: 'Especialista em Nutrição e Treinamento.',
+    bio: 'Médico, Empreśario, Especialista em Alta Performance.',
     image: '/images/paulo-muzi.png',
     links: [
       { url: 'https://instagram.com/paulo', icon: '📸' },
@@ -18,7 +18,7 @@ const speakersData = [
 {
     id: 2,
     name: 'Daniel Guedes',
-    bio: 'Especialista em Nutrição e Treinamento.',
+    bio: 'Empresário, Nutricionista, Coach e Atleta de Alta Proffisional.',
     image: '/images/daniel-guedes.png',
     links: [
       { url: 'https://instagram.com/daniel', icon: '📸' },
