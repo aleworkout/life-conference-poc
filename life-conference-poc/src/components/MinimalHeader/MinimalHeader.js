@@ -39,12 +39,6 @@ const DesktopHeader = styled.header`
   }
 `;
 
-const LogoImage = styled.img`
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px; /* Ajustar conforme necessário */
-`;
-
 const MinimalHeader = ({ logoSrc }) => {
   return (
     <>
