@@ -1,4 +1,3 @@
-// Importações necessárias
 import React from 'react';
 import styled from 'styled-components';
 import { FaInstagram, FaCopy, FaMapMarkedAlt, FaWaze, FaUber } from 'react-icons/fa';
@@ -8,7 +7,6 @@ const EventLocationContainer = styled.div`
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +17,21 @@ const EventLocationContainer = styled.div`
 const Title = styled.h2`
   margin-bottom: 10px;
   text-align: center;
+`;
+
+// Estilização do card de localização do evento
+const EventCard = styled.div`
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 20px;
 `;
 
 // Estilização do endereço
@@ -68,6 +81,7 @@ const NavigationButtons = styled.div`
   justify-content: space-between;
   margin-bottom: 15px;
   align-items: stretch;
+  width: 100%;
 `;
 
 // Estilização de cada botão de navegação
@@ -101,12 +115,14 @@ const Benefit = styled.div`
   flex: 1 0 48%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
 `;
 
 // Estilização do texto do benefício
 const BenefitText = styled.span`
   font-size: 0.9em;
+  text-align: center;
 `;
 
 // Componente EventLocation
@@ -120,34 +136,36 @@ const EventLocation = ({ address, instagram, benefits }) => {
   return (
     <EventLocationContainer>
       <Title>Local do Evento</Title>
-      <Address>
-        <AddressSpan>{address}</AddressSpan>
-        <CopyButton onClick={handleCopy}>
-          Copiar <FaCopy />
-        </CopyButton>
-      </Address>
-      <InstagramLink href={instagram} target="_blank" rel="noopener noreferrer">
-        Visite o Instagram do Local <FaInstagram />
-      </InstagramLink>
-      <NavigationButtons>
-        <NavigationButton bgColor="#4285f4" color="white" onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`, '_blank')}>
-          Google Maps <FaMapMarkedAlt />
-        </NavigationButton>
-        <NavigationButton bgColor="#ffcc00" color="black" onClick={() => window.open(`https://www.waze.com/ul?ll=${encodeURIComponent(address)}&navigate=yes`, '_blank')}>
-          Waze <FaWaze />
-        </NavigationButton>
-        <NavigationButton bgColor="black" color="white" onClick={() => window.open(`https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${encodeURIComponent(address)}`, '_blank')}>
-          Uber <FaUber />
-        </NavigationButton>
-      </NavigationButtons>
-      <BenefitsContainer>
-        {benefits.map((benefit, index) => (
-          <Benefit key={index}>
-            {benefit.icon}
-            <BenefitText>{benefit.text}</BenefitText>
-          </Benefit>
-        ))}
-      </BenefitsContainer>
+      <EventCard>
+        <Address>
+          <AddressSpan>{address}</AddressSpan>
+          <CopyButton onClick={handleCopy}>
+            Copiar <FaCopy />
+          </CopyButton>
+        </Address>
+        <InstagramLink href={instagram} target="_blank" rel="noopener noreferrer">
+          Visite o Instagram do Local <FaInstagram />
+        </InstagramLink>
+        <NavigationButtons>
+          <NavigationButton bgColor="#4285f4" color="white" onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`, '_blank')}>
+            Google Maps <FaMapMarkedAlt />
+          </NavigationButton>
+          <NavigationButton bgColor="#ffcc00" color="black" onClick={() => window.open(`https://www.waze.com/ul?ll=${encodeURIComponent(address)}&navigate=yes`, '_blank')}>
+            Waze <FaWaze />
+          </NavigationButton>
+          <NavigationButton bgColor="black" color="white" onClick={() => window.open(`https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${encodeURIComponent(address)}`, '_blank')}>
+            Uber <FaUber />
+          </NavigationButton>
+        </NavigationButtons>
+        <BenefitsContainer>
+          {benefits.map((benefit, index) => (
+            <Benefit key={index}>
+              {benefit.icon}
+              <BenefitText>{benefit.text}</BenefitText>
+            </Benefit>
+          ))}
+        </BenefitsContainer>
+      </EventCard>
     </EventLocationContainer>
   );
 };
