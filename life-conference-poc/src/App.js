@@ -1,7 +1,8 @@
 // src/App.js
 import React from 'react';
 import SpeakersSection from './components/SpeakersSection/SpeakersSection';
-import HeaderInteractive from './components/HeaderInteractive/HeaderInteractive';
+import MinimalHeader from './components/MinimalHeader/MinimalHeader';
+import logoImage from './assets/logo.png'; // Caminho da imagem da logo
 
 const speakersData = [
 {
@@ -35,7 +36,7 @@ const speakersData = [
 function App() {
   return (
     <div className="App">
-      <HeaderInteractive />
+      <MinimalHeader logoSrc={logoImage} rounded={true} />      
       <SpeakersSection speakers={speakersData} />
     </div>
   );
