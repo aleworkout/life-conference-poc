@@ -74,8 +74,8 @@ const SpeakersSection = ({ speakers }) => {
         {speakers.map((speaker) => (
           <SpeakerCard key={speaker.id}>
             <SpeakerImage src={speaker.image} alt={speaker.name} />
-            <SpeakerName>{speaker.name}</SpeakerName>
-            <SpeakerBio>{speaker.bio}</SpeakerBio>
+            <SpeakerName translate='no'>{speaker.name}</SpeakerName>
+            <SpeakerBio translate='no'>{speaker.bio}</SpeakerBio>
             <SpeakerLinks>
               {speaker.links.map((link) => (
                 <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">
