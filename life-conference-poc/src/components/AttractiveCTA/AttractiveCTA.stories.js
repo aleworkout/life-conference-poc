@@ -23,3 +23,27 @@ Form.args = {
   text: 'Preencher Formulário',
   onClick: action('form-click'),
 };
+
+export const SmallButton = Template.bind({});
+SmallButton.args = {
+    icon: <FaTicketAlt />,
+    text: 'Small Button',
+    onClick: action('small-button-click'),
+    width: '100px',
+};
+
+export const MediumButton = Template.bind({});
+MediumButton.args = {
+    icon: <FaRegQuestionCircle />,
+    text: 'Medium Button',
+    onClick: action('medium-button-click'),
+    width: '200px',
+};
+
+export const LargeButton = Template.bind({});
+LargeButton.args = {
+    icon: <FaRegQuestionCircle />,
+    text: 'Large Button',
+    onClick: action('large-button-click'),
+    width: '300px',
+};

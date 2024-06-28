@@ -4,7 +4,7 @@ import SpeakersSection from './components/SpeakersSection/SpeakersSection';
 import MinimalHeader from './components/MinimalHeader/MinimalHeader';
 import logoImage from './assets/logo.png'; // Caminho da imagem da logo
 import AttractiveCTA from './components/AttractiveCTA/AttractiveCTA';
-import { FaArrowRight } from 'react-icons/fa'; // Importando um ícone específico
+import { FaTicketAlt } from 'react-icons/fa'; // Importando um ícone específico
 
 const speakersData = [
 {
@@ -45,9 +45,10 @@ function App() {
       <MinimalHeader logoSrc={logoImage} rounded={true} />      
       <SpeakersSection speakers={speakersData} />
       <AttractiveCTA
-        icon={<FaArrowRight />}
-        text="Clique Aqui!"
+        icon={<FaTicketAlt />}
+        text="Comprar Ingressos"
         onClick={handleClick}
+        width={'300px'}
       />
     </div>
   );
