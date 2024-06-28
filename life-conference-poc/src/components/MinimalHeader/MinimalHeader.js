@@ -39,16 +39,20 @@ const DesktopHeader = styled.header`
   }
 `;
 
+const HeaderContainer = styled.div`
+  background-color: #f8f9fa; /* Cor específica */
+`;
+
 const MinimalHeader = ({ logoSrc }) => {
   return (
-    <>
+    <HeaderContainer>
       <MobileHeader>
         <img src={logoSrc} alt="Life Conference Amazon 2024 Logo" />
       </MobileHeader>
       <DesktopHeader>
         <HeaderInteractive />
       </DesktopHeader>
-    </>
+    </HeaderContainer>
   );
 };
 
