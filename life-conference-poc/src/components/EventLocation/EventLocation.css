@@ -1,0 +1,96 @@
+.event-location {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* margin: 20px 0; */
+  }
+  
+  .event-location h2 {
+    font-size: 1.5em;
+    /* margin-bottom: 10px; */
+  }
+  
+  .event-address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .event-address span {
+    flex: 1;
+    font-size: 1em;
+  }
+  
+  .copy-button {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9em;
+  }
+  
+  .instagram-link {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #d81b60;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .navigation-buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .google-maps {
+    background-color: #4285f4;
+    color: white;
+  }
+  
+  .waze {
+    background-color: #ffcc00;
+    color: black;
+  }
+  
+  .uber {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .benefit {
+    flex: 1 0 48%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .benefit svg {
+    margin-right: 8px;
+    font-size: 1.2em;
+  }
+  
+  .benefit-text {
+    font-size: 0.9em;
+  }
+  

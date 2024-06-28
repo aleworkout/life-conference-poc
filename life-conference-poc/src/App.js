@@ -5,6 +5,18 @@ import MinimalHeader from './components/MinimalHeader/MinimalHeader';
 import logoImage from './assets/logo.png'; // Caminho da imagem da logo
 import AttractiveCTA from './components/AttractiveCTA/AttractiveCTA';
 import { FaTicketAlt } from 'react-icons/fa'; // Importando um ícone específico
+import EventLocation from './components/EventLocation/EventLocation';
+import { FaParking, FaLock, FaSnowflake, FaToilet, FaUtensils } from 'react-icons/fa';
+
+// Defina os benefícios ou obtenha-os de outra fonte
+const benefits = [
+  { icon: <FaParking />, text: 'Estacionamento' },
+  { icon: <FaLock />, text: 'Segurança' },
+  { icon: <FaSnowflake />, text: 'Ar-Condicionado' },
+  { icon: <FaToilet />, text: 'Banheiros' },
+  { icon: <FaUtensils />, text: 'Restaurantes' },
+];
+
 
 const speakersData = [
 {
@@ -42,8 +54,13 @@ const handleClick = () => {
 function App() {
   return (
     <div className="App">
-      <MinimalHeader logoSrc={logoImage} rounded={true} />      
+      <MinimalHeader logoSrc={logoImage} rounded={true} />  
       <SpeakersSection speakers={speakersData} />
+      <EventLocation 
+        address="1234 Main St, Anytown, USA"
+        instagram="https://www.instagram.com/location"
+        benefits={benefits}
+      />
       <AttractiveCTA
         icon={<FaTicketAlt />}
         text="Comprar Ingressos"
