@@ -31,9 +31,9 @@ const Icon = styled.span`
     margin-right: 10px;
 `;
 
-const AttractiveCTA = ({ icon, text, onClick, width }) => {
+const AttractiveCTA = ({ icon, text, onClick, width, buttonColor, textColor }) => {
     return (
-        <Container width={width} onClick={onClick}>
+        <Container width={width} onClick={onClick} style={{ backgroundColor: buttonColor, color: textColor }}>
             <Icon>{icon}</Icon>
             {text}
         </Container>
@@ -44,7 +44,9 @@ AttractiveCTA.propTypes = {
     icon: PropTypes.element.isRequired,
     text: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
-    width: PropTypes.string, // Nova prop para o width do botão
+    width: PropTypes.string,
+    buttonColor: PropTypes.string, // Nova prop para a cor do botão
+    textColor: PropTypes.string, // Nova prop para a cor do texto
 };
 
 export default AttractiveCTA;

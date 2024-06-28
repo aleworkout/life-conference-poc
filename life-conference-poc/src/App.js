@@ -49,6 +49,8 @@ function App() {
         text="Comprar Ingressos"
         onClick={handleClick}
         width={'300px'}
+        buttonColor={'#020002'}
+        textColor={'#A8FF00'}
       />
     </div>
   );
